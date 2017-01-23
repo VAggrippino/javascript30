@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+  background: #ffc600;
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.panelcb {
+  position: absolute;
+  left: -99999px;
+}
+
+.panel {
+  background: #6B0F9C;
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  align-items: center;
+  /* Safari transitionend event.propertyName === flex */
+  /* Chrome + FF transitionend event.propertyName === flex-grow */
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.panel label {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.panel1 {
+  background-image: url(http://lorempixel.com/1080/800/nature);
+}
+
+.panel2 {
+  background-image: url(http://lorempixel.com/1080/800/technics);
+}
+
+.panel3 {
+  background-image: url(http://lorempixel.com/1080/800/people);
+}
+
+.panel4 {
+  background-image: url(http://lorempixel.com/1080/800/animals);
+}
+
+.panel5 {
+  background-image: url(http://lorempixel.com/1080/800/abstract);
+}
+
+.panel > p {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.panel > p:first-child { transform: translateY(-100%); }
+.panel > p:last-child { transform: translateY(100%); }
+
+.panelcb:checked + .panel > p:first-child,
+.panelcb:checked + .panel > p:last-child {
+  transform: translateY(0);
+}
+
+.panel p {
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 2em;
+}
+
+.panel p:nth-child(2) {
+  font-size: 4em;
+}
+
+.panelcb:checked + .panel {
+  flex: 5;
+  font-size: 40px;
+}
+
+.cta {
+  color: white;
+  text-decoration: none;
+}
