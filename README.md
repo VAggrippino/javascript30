@@ -19,4 +19,4 @@ https://javascript30.com
  Practice with Array methods: `.filter()`, `.map()`, `.sort()`, `.reduce()`.
  * Challenge #5 : [Flex Panels Image Gallery](05_FlexPanelsImageGallery/)  
  Build a sort of an image gallery with Flexbox and animated text.
-  - Bonus: A CSS-only version that shows how to do it without Javascript: [Flex Panels Image Gallery](05_FlexPanelsImageGallery_CSS-only/)
+ **Bonus**: A CSS-only version that shows how to do it without Javascript: [Flex Panels Image Gallery](05_FlexPanelsImageGallery_CSS-only/)
