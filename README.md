@@ -1,4 +1,4 @@
-# javascript30
+# \#javascript30
 Wes Bos' #Javascript30 challenge
 
 https://javascript30.com
@@ -20,3 +20,6 @@ https://javascript30.com
  * Challenge #5 : [Flex Panels Image Gallery](05_FlexPanelsImageGallery/)  
  Build a sort of an image gallery with Flexbox and animated text.  
  **Bonus**: A CSS-only version that shows how to do it without Javascript: [Flex Panels Image Gallery](05_FlexPanelsImageGallery_CSS-only/)
+ * Challenge #6 : [AJAX Type-Ahead](06_AJAXTypeAhead/)  
+ Automatically search a dataset and show results while typing into a search box.  
+ **Note**: The instructor's original example had a bug which caused the case of the results to be changed under some circumstances. This is corrected in my version.
