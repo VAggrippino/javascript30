@@ -25,3 +25,5 @@ https://javascript30.com
  **Note**: The instructor's original example had a bug which caused the case of the results to be changed under some circumstances. This is corrected in my version.
  7. [Array Cardio 2](07_ArrayCardio2/)  
  Practice with Array methods `.some()`, `.every()`, `.find()`, `.findIndex()`.
+ 8. [Fun with The HTML5 Canvas](08_FunWithTheHTML5Canvas/)
+ Simple colorful drawing with the mouse using the canvas element and Javascript.
