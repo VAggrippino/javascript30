@@ -27,3 +27,5 @@ https://javascript30.com
  Practice with Array methods `.some()`, `.every()`, `.find()`, `.findIndex()`.
  8. [Fun with The HTML5 Canvas](08_FunWithTheHTML5Canvas/)
  Simple colorful drawing with the mouse using the canvas element and Javascript.
+ 9. [Dev Tools Tricks](09_DevToolsTricks/)
+ 14 tips for using the Developer Tools Console and `console`.
