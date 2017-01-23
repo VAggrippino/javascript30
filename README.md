@@ -15,3 +15,5 @@ https://javascript30.com
  Create a working analog clock using Javascript and CSS animation.
  * Challenge #3 : [Playing with CSS Variables and Js](03_PlayingWithCSSVariablesAndJs/)  
  Manipulate CSS variables in a document's stylesheet using Javascript.
+ * Challenge #4 : [Array Cardio #1](04_ArrayCardio1/)  
+ Practice with Array methods: `.filter()`, `.map()`, `.sort()`, `.reduce()`.
