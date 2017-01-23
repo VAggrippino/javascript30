@@ -9,17 +9,19 @@ https://javascript30.com
  >
  > No Frameworks × No Compilers × No Libraries × No Boilerplate
 
- * Challenge #1 : [Javascript Drum Kit](01_JavascriptDrumKit/)  
+ 1. [Javascript Drum Kit](01_JavascriptDrumKit/)  
  Manipulate HTML `audio` elements using Javascript
- * Challenge #2 : [CSS + Js Clock](02_CSS+JsClock/)  
+ 2. [CSS + Js Clock](02_CSS+JsClock/)  
  Create a working analog clock using Javascript and CSS animation.
- * Challenge #3 : [Playing with CSS Variables and Js](03_PlayingWithCSSVariablesAndJs/)  
+ 3. [Playing with CSS Variables and Js](03_PlayingWithCSSVariablesAndJs/)  
  Manipulate CSS variables in a document's stylesheet using Javascript.
- * Challenge #4 : [Array Cardio #1](04_ArrayCardio1/)  
+ 4. [Array Cardio #1](04_ArrayCardio1/)  
  Practice with Array methods: `.filter()`, `.map()`, `.sort()`, `.reduce()`.
- * Challenge #5 : [Flex Panels Image Gallery](05_FlexPanelsImageGallery/)  
+ 5. [Flex Panels Image Gallery](05_FlexPanelsImageGallery/)  
  Build a sort of an image gallery with Flexbox and animated text.  
  **Bonus**: A CSS-only version that shows how to do it without Javascript: [Flex Panels Image Gallery](05_FlexPanelsImageGallery_CSS-only/)
- * Challenge #6 : [AJAX Type-Ahead](06_AJAXTypeAhead/)  
+ 6. [AJAX Type-Ahead](06_AJAXTypeAhead/)  
  Automatically search a dataset and show results while typing into a search box.  
  **Note**: The instructor's original example had a bug which caused the case of the results to be changed under some circumstances. This is corrected in my version.
+ 7. [Array Cardio 2](07_ArrayCardio2/)  
+ Practice with Array methods `.some()`, `.every()`, `.find()`, `.findIndex()`.
