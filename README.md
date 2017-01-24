@@ -29,3 +29,5 @@ https://javascript30.com
  Simple colorful drawing with the mouse using the canvas element and Javascript.
  9. [Dev Tools Tricks](09_DevToolsTricks/)  
  14 tips for using the Developer Tools Console and `console`.
+ 10. [Hold Shift to Check Multiple Checkboxes](10_HoldShiftToCheckMultipleCheckboxes)  
+ Similar to selecting multiple messages in an email client, this demonstrates selecting multiple checkboxes in a form using the Shift key.
