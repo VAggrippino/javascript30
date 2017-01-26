@@ -37,3 +37,5 @@ https://javascript30.com
  Track keypresses for a specific sequence of characters using the `keyup` event and [Array.prototype.splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice).
  13. [Slide-In on Scroll](13_SlideInOnScroll/)  
  Calculate scroll positions and use CSS transitions to slide images in while scrolling.
+ 14. [Objects and Arrays - Reference vs Copy](14_ReferenceVsCopy/)  
+ Small demonstrations of reference assignment for arrays and objects and methods of making actual copies of these data types.
