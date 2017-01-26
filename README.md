@@ -35,3 +35,5 @@ https://javascript30.com
  A custom video player using the HTML5 `video` element, the [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API) and CSS3 animations.
  12. [Key Sequence Detection](12_KeySequenceDetection/)  
  Track keypresses for a specific sequence of characters using the `keyup` event and [Array.prototype.splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice).
+ 13. [Slide-In on Scroll](13_SlideInOnScroll/)  
+ Calculate scroll positions and use CSS transitions to slide images in while scrolling.
