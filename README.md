@@ -39,3 +39,5 @@ https://javascript30.com
  Calculate scroll positions and use CSS transitions to slide images in while scrolling.
  14. [Objects and Arrays - Reference vs Copy](14_ReferenceVsCopy/)  
  Small demonstrations of reference assignment for arrays and objects and methods of making actual copies of these data types.
+ 15. [HTML5 `localStorage` and Event Delegation](15_LocalStorageAndEventDelegation/)  
+ Demonstrate the use of HTML5 localStorage and Javascript event delegation.
