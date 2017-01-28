@@ -41,3 +41,5 @@ https://javascript30.com
  Small demonstrations of reference assignment for arrays and objects and methods of making actual copies of these data types.
  15. [HTML5 `localStorage` and Event Delegation](15_LocalStorageAndEventDelegation/)  
  Demonstrate the use of HTML5 localStorage and Javascript event delegation.
+ 16. [CSS Text Shadow Mouse Move Effect](16_CSSTextShadowMouseMoveEffect/)  
+ Track mouse position over an element and use the information to adjust the element's `text-shadow` properties.
