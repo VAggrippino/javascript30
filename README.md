@@ -43,3 +43,5 @@ https://javascript30.com
  Demonstrate the use of HTML5 localStorage and Javascript event delegation.
  16. [CSS Text Shadow Mouse Move Effect](16_CSSTextShadowMouseMoveEffect/)  
  Track mouse position over an element and use the information to adjust the element's `text-shadow` properties.
+ 17. [Sorting Band Names Without Articles](17_SortingBandNamesWithoutArticles/)  
+ Demonstrate how to sort a list of strings without considering starting articles like "a", "an", and "the".
