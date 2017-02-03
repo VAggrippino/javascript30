@@ -1,0 +1,22 @@
+li[data-time]::after {
+  content: attr(data-time);
+  color: green;
+  display: inline-block;
+  font-size: 0.9em;
+  padding: 1em;
+}
+
+#total {
+  display: block;
+  position: fixed;
+  top: 30%;
+  right: 2em;
+}
+
+#total input {
+  font-size: 2em;
+  font-weight: bold;
+  width: 4em;
+  text-align: center;
+  border: none;
+}
