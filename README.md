@@ -47,3 +47,5 @@ https://javascript30.com
  Demonstrate how to sort a list of strings without considering starting articles like "a", "an", and "the".
  18. [Tally Time Strings Using `.reduce()`](18_TallyStringTimesWithReduce/)  
  An example of gathering time strings from HTML5 data and using [.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) to calculate the sum of the values.
+ 19. [Unreal Webcam Fun](19_UnrealWebcamFun/)  
+ Experimentation with the HTML5 [`canvas`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas) element and a webcam.
