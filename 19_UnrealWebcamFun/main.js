@@ -22,12 +22,24 @@ function paintToCanvas() {
   canvas.width = width;
   canvas.height = height;
   
+  const sizeRatio = width / height;
+  
   const controls = document.querySelector('.controls');
   const spaceLeft = window.innerWidth - controls.offsetWidth;
-  const newScale = Math.floor((spaceLeft / width) * 10)/10;
-  console.log(newScale);
   
-  canvas.style.transform = `scale(${newScale})`;
+  const newScale = Math.floor((spaceLeft / width) * 10)/10;
+  let newWidth = width * newScale;
+  let newHeight = height * newScale;
+  
+  if (newHeight > window.innerHeight) {
+    newHeight = window.innerHeight;
+    newWidth = newHeight * sizeRatio;
+  }
+  let newMargin = (spaceLeft - newWidth) / 2;
+  
+  canvas.style.width = newWidth + 'px';
+  canvas.style.height = newHeight + 'px';
+  canvas.style.marginLeft = newMargin + 'px';
 
   return setInterval(() => {
     ctx.drawImage(video, 0, 0, width, height);
