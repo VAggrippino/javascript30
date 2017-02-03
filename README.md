@@ -45,5 +45,5 @@ https://javascript30.com
  Track mouse position over an element and use the information to adjust the element's `text-shadow` properties.
  17. [Sorting Band Names Without Articles](17_SortingBandNamesWithoutArticles/)  
  Demonstrate how to sort a list of strings without considering starting articles like "a", "an", and "the".
- 18. [Tally Time Strings Using `.reduce()`]()  
- An example of gathering time strings from HTML5 data and using [.reduce(18_TallyStringTimesWithReduce/)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) to calculate the sum of the values.
+ 18. [Tally Time Strings Using `.reduce()`](18_TallyStringTimesWithReduce/)  
+ An example of gathering time strings from HTML5 data and using [.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) to calculate the sum of the values.
