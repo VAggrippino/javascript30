@@ -53,3 +53,6 @@ https://javascript30.com
  Demonstrate use of the Web Speech API with simple text transcription.
  21. [Geolocation-Based Speedometer and Compass](21_GeolocationSpeedometerAndCompass/)  
  Demonstrate use of the Web Geolocation API with visual direction and speed indicators.
+ 22. [Follow-Along Link Highlights](22_FollowAlongLinks/)  
+ An interesting method for highlighing the hovered link using CSS3 animation.
+ 
