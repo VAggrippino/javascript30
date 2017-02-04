@@ -51,3 +51,5 @@ https://javascript30.com
  Experimentation with the HTML5 [`canvas`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas) element and a webcam.
  20. [Native Speech Recognition](20_NativeSpeechRecognition/)  
  Demonstrate use of the Web Speech API with simple text transcription.
+ 21. [Geolocation-Based Speedometer and Compass](21_GeolocationSpeedometerAndCompass/)  
+ Demonstrate use of the Web Geolocation API with visual direction and speed indicators.
