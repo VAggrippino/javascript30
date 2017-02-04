@@ -49,3 +49,5 @@ https://javascript30.com
  An example of gathering time strings from HTML5 data and using [.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) to calculate the sum of the values.
  19. [Unreal Webcam Fun](19_UnrealWebcamFun/)  
  Experimentation with the HTML5 [`canvas`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas) element and a webcam.
+ 20. [Native Speech Recognition](20_NativeSpeechRecognition/)  
+ Demonstrate use of the Web Speech API with simple text transcription.
