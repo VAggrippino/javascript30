@@ -55,4 +55,5 @@ https://javascript30.com
  Demonstrate use of the Web Geolocation API with visual direction and speed indicators.
  22. [Follow-Along Link Highlights](22_FollowAlongLinks/)  
  An interesting method for highlighing the hovered link using CSS3 animation.
- 
+ 23. [Speech Synthesis](23_SpeechSynthesis/)  
+ A UI for the SpeechSynthesis interface to the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API).
