@@ -59,3 +59,5 @@ An interesting method for highlighing the hovered link using CSS3 animation.
 A UI for the SpeechSynthesis interface to the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API).
 24. [Sticky Navigation Bar](24_StickyNav/)  
 Implementation of a navigation bar that is automatically fixed to the top of the window rather than scrolled out of the viewport when the document is scrolled past a certain point.
+26. [Follow-Along DropDowns](26_FollowAlongDropDown/)  
+Dropdown menus with dynamic size and content.
