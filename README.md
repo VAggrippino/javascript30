@@ -69,3 +69,5 @@ Click and drag to scroll an element's content rather than using a scroll bar.
 An example of using an HTML5 video element with a custom control to change the playback rate.
   - [Video Speed Controller - alternate version](28_VideoSpeedController_alternate/)  
   An alternate version of the Video Speed Controller with different styling.
+29. [Countdown Clock](29_CountdownClock/)  
+A countdown clock implemented with CSS and JavaScript.

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="timer">
+  <div class="timer__controls">
+    <button data-time="3" class="timer__button">3 Seconds</button>
+    <button data-time="300" class="timer__button">Work 5</button>
+    <button data-time="900" class="timer__button">Quick 15</button>
+    <button data-time="1200" class="timer__button">Snack 20</button>
+    <button data-time="3600" class="timer__button">Lunch Break</button>
+    <form name="customForm" id="custom">
+      <input type="text" name="minutes" placeholder="Enter Minutes">
+    </form>
+  </div>
+  <div class="display">
+    <h1 class="display__time-left"></h1>
+    <p class="display__end-time"></p>
+  </div>
+</div>
+
+<audio preload id="sound" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/29229/beepbeep_258193_2276808-lq.mp3">
+<script src="main.js"></script>
+</body>

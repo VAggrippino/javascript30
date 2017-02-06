@@ -1,0 +1,111 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-size: 10px;
+}
+
+body {
+  background: #8E24AA;
+  background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+}
+
+body > * {
+  position: relative;
+  z-index: 100;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  background-color: yellow;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+}
+
+body.alarm::after {
+  animation-name: flash;
+  animation-duration: 0.1s;
+  animation-iteration-count: 5;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+
+@keyframes flash {
+  0%   { opacity: 0; }
+  50%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.display__time-left {
+  font-weight: 100;
+  font-size: 24vw;
+  margin: 0;
+  color: white;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.timer {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.timer__controls {
+  display: flex;
+  position: relative;
+}
+
+.timer__controls > * {
+  flex: 1;
+}
+
+.timer__controls form {
+  flex: 1;
+  display: flex;
+}
+
+.timer__controls input {
+  flex: 1;
+  border: 0;
+  padding: 3vw;
+  box-sizing: border-box;
+}
+
+.timer__button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 3vw;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1.5vw;
+  font-family: 'Inconsolata', monospace;
+}
+
+.timer__button:hover,
+.timer__button:focus {
+  background: rgba(0, 0, 0, 0.2);
+  outline: 0;
+}
+
+.display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.display__end-time {
+  font-size: 8vw;
+  color: white;
+}
