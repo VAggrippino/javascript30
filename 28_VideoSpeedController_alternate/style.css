@@ -1,0 +1,67 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+}
+
+h1 {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  max-width: 90%;
+  background: #111;
+  padding: 0.5em 0;
+  box-shadow: 0px 0px 5px 5px rgba(255,255,255,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+video {
+  background-color: black;
+  max-width: 90%;
+}
+
+.speedControl {
+  width: 2em;
+  padding: 2px;
+  border: 1px inset silver;
+  box-sizing: border-box;
+  background: black;
+  align-self: stretch;
+  margin: 0 0 0 0.5em;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.indicator {
+  user-select: none;
+  color: white;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient( to left top, blue, red);
+  font-size: 0.7em;
+  font-family: sans-serif;
+}
