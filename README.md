@@ -71,3 +71,5 @@ An example of using an HTML5 video element with a custom control to change the p
   An alternate version of the Video Speed Controller with different styling.
 29. [Countdown Clock](29_CountdownClock/)  
 A countdown clock implemented with CSS and JavaScript.
+30. [Whack-A-Mole](30_Whack-A-Mole/)  
+An implementation of the classic Whack-A-Mole game using JavaScript and CSS transitions.
