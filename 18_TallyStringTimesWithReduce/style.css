@@ -10,7 +10,12 @@ li[data-time]::after {
   display: block;
   position: fixed;
   top: 30%;
-  right: 2em;
+  left: 20rem;
+  border-radius: 2em;
+  border: 2px outset lightgreen;
+  background: #ffd;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  padding: 1em;
 }
 
 #total input {
@@ -19,4 +24,5 @@ li[data-time]::after {
   width: 4em;
   text-align: center;
   border: none;
+  background: transparent;
 }
