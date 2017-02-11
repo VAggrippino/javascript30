@@ -29,7 +29,7 @@ Practice with Array methods `.some()`, `.every()`, `.find()`, `.findIndex()`.
 Simple colorful drawing with the mouse on an HTML5 canvas.
 9. [Dev Tools Tricks](09_DevToolsTricks/)  
 14 tips for using the Developer Tools Console and `console`.
-10. [Hold Shift to Check Multiple Checkboxes](10_HoldShiftToCheckMultipleCheckboxes)  
+10. [Hold Shift to Check Multiple Checkboxes](10_HoldShiftToCheckMultipleCheckboxes/)  
 Similar to multiple selection in an email client or file manager, this demonstrates selection of multiple checkboxes in an HTML form using the Shift key.
 11. [Custom HTML5 Video Player](11_CustomHTML5VideoPlayer/)  
 A custom video player using the HTML5 `video` element, the [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API) and CSS animations.
