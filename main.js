@@ -22,7 +22,14 @@ $(function() {
   });
 
   projects.forEach(project => {
+    const title = project.querySelector('.title');
+    const screenshot = project.querySelector('.screenshot img, .screenshot video');
     project.addEventListener('mouseover', () => project.classList.add('mouseover'));
     project.addEventListener('mouseleave', () => project.classList.remove('mouseover'));
+
+    project.addEventListener('click', e => {
+      if (!(e.target === title || e.target === screenshot)) return;
+      location.assign(project.dataset.target);
+    });
   });
 });
