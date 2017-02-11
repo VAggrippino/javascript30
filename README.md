@@ -56,20 +56,20 @@ Demonstrate use of the Web Geolocation API with visual direction and speed indic
 22. [Follow-Along Link Highlights](22_FollowAlongLinks/)  
 An interesting method for highlighing the hovered link using CSS3 animation.
 23. [Speech Synthesis](23_SpeechSynthesis/)  
-A UI for the SpeechSynthesis interface to the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API).
+A UI for Speech Synthesis with the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API).
 24. [Sticky Navigation Bar](24_StickyNav/)  
 Implementation of a navigation bar that is automatically fixed to the top of the window rather than scrolled out of the viewport when the document is scrolled past a certain point.
 25. [`addEventListener` Options: Capture, Once, stopPropagation](25_addEventListener)  
 A visual demonstration of some of the less-used `addEventListener` options.
-26. [Follow-Along DropDowns](26_FollowAlongDropDown/)  
+26. [Follow-Along Dropdowns](26_FollowAlongDropDown/)  
 Dropdown menus with dynamic size and content.
 27. [Click and Drag to Scroll](27_ClickAndDragToScroll/)  
 Click and drag to scroll an element's content rather than using a scroll bar.
 28. [Video Speed Controller](28_VideoSpeedController/)  
-An example of using an HTML5 video element with a custom control to change the playback rate.
+An example of an HTML5 video element with a custom control which changes the playback rate.
   - [Video Speed Controller - alternate version](28_VideoSpeedController_alternate/)  
   An alternate version of the Video Speed Controller with different styling.
 29. [Countdown Clock](29_CountdownClock/)  
 A countdown clock implemented with CSS and JavaScript.
 30. [Whack-A-Mole](30_Whack-A-Mole/)  
-An implementation of the classic Whack-A-Mole game using JavaScript and CSS transitions.
+The classic Whack-A-Mole game implemented with JavaScript and CSS transitions.
