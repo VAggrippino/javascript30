@@ -67,6 +67,12 @@ main .project {
   height: 300px;
   margin: 1rem;
   position: relative;
+  transition: all 0.3s;
+}
+
+main .project:hover,
+main .project.mouseover {
+  transform: scale(1.2);
 }
 
 main .content {
@@ -115,24 +121,16 @@ main p {
   position: relative;
 }
 
-/*
 .video:after {
   font-family: 'FontAwesome';
-  font-size: 50px;
-  text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-  content: '\f01d';
+  content: '\f03d';
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  bottom: 5%;
+  right: 2%;
   color: white;
-  opacity: 0.6;
+  text-shadow: 1px 1px 3px black;
+  opacity: 0.5;
 }
-*/
 
 .video.playing:after {
   opacity: 0;
