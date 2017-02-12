@@ -1,17 +1,31 @@
-body {
-  margin: 0;
+:root {
+  --mainBg: #111;
+  --projectBg: black;
+  --projectColor: silver;
+  --linkColor: slategray;
+  --projectWidth: 15rem;
+  --projectHeight: 17rem;
 }
 
-header, main {
-  margin: 0 auto;
+body {
+  margin: 0;
 }
 
 header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  max-width: 40rem;
+  align-items: center;
+  background-color: var(--mainBg);
+  background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px),
+    linear-gradient(purple, var(--mainBg) 50%);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  color: white;
 }
 
 header h1 {
@@ -23,7 +37,7 @@ header h1 {
   margin: 4rem 0;
   transform: rotate(-5deg);
   align-self: center;
-  color: #111;
+  color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
@@ -35,10 +49,16 @@ header h1:after {
   top: 0.2em;
   transform: scaleX(7);
   transform-origin: left;
+  color: black;
 }
 
 header p {
   font-size: 1.2em;
+  max-width: 40rem;
+}
+
+header a {
+  color: var(--linkColor);
 }
 
 main {
@@ -46,60 +66,64 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  align-content: flex-start;
+  background-color: var(--mainBg);
 }
 
-main .screenshot {
-  width: calc(100% - 2rem);
-  margin: 0 1rem;
-  cursor: pointer;
+main:after {
+  content: '';
+  display: block;
+  height: 100vh;
 }
 
-main .screenshot img,
-main .screenshot video {
-  width: 100%;
-}
-
-main .project {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 250px;
-  height: 300px;
+.project {
+  width: var(--projectWidth);
+  height: var(--projectHeight);
   margin: 1rem;
-  position: relative;
-  transition: all 0.3s;
 }
 
-main .project:hover,
-main .project.mouseover {
-  transform: scale(1.2);
-}
-
-main .content {
-  width: 250px;
-  height: 300px;
+.content {
+  width: 100%;
+  min-height: var(--projectHeight);
+  max-height: var(--projectHeight);
+  background: var(--projectBg);
+  color: var(--projectColor);
   overflow: hidden;
-  border: 1px outset silver;
-  border-radius: 1rem;
+  transition: all 0.5s;
+  padding: 0.25rem;
+  box-sizing: border-box;
   box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background: white;
+  transform-origin: top left;
 }
 
-main .title {
-  font-family: sans-serif;
-  font-weight: bold;
-  padding: 0.5rem 1rem 0.25rem 1rem;
-  box-sizing: border-box;
-  white-space: nowrap;
+.project.transformLeft .content {
+  transform-origin: top right;
+}
+
+.project:hover .content {
+  transform: scale(1.2);
+  max-height: calc(100vh - 2rem);
+  box-shadow: 0px 0px 5px 2px rgba(255,255,255,0.5);
+}
+
+.title, .screenshot {
   cursor: pointer;
 }
 
-main .title.scrolling {
+.title {
+  order: 2;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: black;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-bottom: 0.25rem;
+}
+
+.title.scrolling {
   text-align: left;
   align-self: flex-start;
   animation: titleScroll 5s infinite alternate;
@@ -112,28 +136,24 @@ main .title.scrolling {
   100% { transform: translateX(calc(-100% + 250px)) }
 }
 
-main p {
+.screenshot {
+  order: 1;
+  width: 100%;
+}
+
+.screenshot img, .screenshot video {
+  width: 100%;
+}
+
+.description {
+  order: 3;
+  font-size: 0.9rem;
+}
+
+.description p:first-child {
   margin: 0;
-  padding: 1rem;
-  box-sizing: border-box;
 }
 
-.video {
-  display: inline-block;
-  position: relative;
-}
-
-.video:after {
-  font-family: 'FontAwesome';
-  content: '\f03d';
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  color: white;
-  text-shadow: 1px 1px 3px black;
-  opacity: 0.5;
-}
-
-.video.playing:after {
-  opacity: 0;
+.description a {
+  color: var(--linkColor);
 }

@@ -1,19 +1,6 @@
 $(function() {
-  const videos = document.querySelectorAll('.video');
   const titles = document.querySelectorAll('.title');
   const projects = document.querySelectorAll('.project');
-
-  videos.forEach(video => {
-    const player = video.querySelector('video');
-    video.addEventListener('mouseover', () => {
-      player.play();
-      video.classList.add('playing');
-    });
-    video.addEventListener('mouseout', () => {
-      player.pause();
-      video.classList.remove('playing');
-    });
-  });
 
   titles.forEach(title => {
     if (title.offsetWidth > title.parentNode.offsetWidth) {
@@ -24,12 +11,23 @@ $(function() {
   projects.forEach(project => {
     const title = project.querySelector('.title');
     const screenshot = project.querySelector('.screenshot img, .screenshot video');
-    project.addEventListener('mouseover', () => project.classList.add('mouseover'));
-    project.addEventListener('mouseleave', () => project.classList.remove('mouseover'));
+    const player = project.querySelector('video');
 
+    // If this project has a video, add event listeners to play and pause it.
+    if (player !== null) {
+      project.addEventListener('mouseover', () => player.play());
+      project.addEventListener('mouseleave', () => player.pause());
+    }
+
+    // Add event listeners to open the actual project page when clicking on the
+    // title or screenshot.
     project.addEventListener('click', e => {
       if (!(e.target === title || e.target === screenshot)) return;
       location.assign(project.dataset.target);
     });
+
+    if (project.offsetLeft > window.innerWidth / 2) {
+      project.classList.add('transformLeft');
+    }
   });
 });
