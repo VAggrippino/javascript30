@@ -1,4 +1,4 @@
-$(function() {
+window.onload = function() {
   const titles = document.querySelectorAll('.title');
   const projects = document.querySelectorAll('.project');
 
@@ -30,4 +30,4 @@ $(function() {
       project.classList.add('transformLeft');
     }
   });
-});
+}

@@ -9,6 +9,7 @@
 
 body {
   margin: 0;
+  font-family: sans-serif;
 }
 
 header {
@@ -23,7 +24,10 @@ header {
     radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
     radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px),
     linear-gradient(purple, var(--mainBg) 50%);
+  /*
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+  */
+  background-size: cover, cover, cover, cover;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   color: white;
 }
@@ -31,10 +35,10 @@ header {
 header h1 {
   font-family: 'Permanent Marker', cursive;
   font-style: italic;
-  font-size: 5rem;
+  font-size: 10vw;
   line-height: 1em;
   position: relative;
-  margin: 4rem 0;
+  margin: 0.5em 0;
   transform: rotate(-5deg);
   align-self: center;
   color: white;
@@ -54,7 +58,9 @@ header h1:after {
 
 header p {
   font-size: 1.2em;
-  max-width: 40rem;
+  max-width: 35em;
+  line-height: 1.5em;
+  padding: 0 1em;
 }
 
 header a {
@@ -104,6 +110,8 @@ main:after {
   transform: scale(1.2);
   max-height: calc(100vh - 2rem);
   box-shadow: 0px 0px 5px 2px rgba(255,255,255,0.5);
+  position: relative;
+  z-index: 100;
 }
 
 .title, .screenshot {
@@ -118,7 +126,6 @@ main:after {
   display: inline-block;
   text-align: center;
   white-space: nowrap;
-  overflow: hidden;
   flex-shrink: 0;
   margin-bottom: 0.25rem;
 }
@@ -132,8 +139,8 @@ main:after {
 @keyframes titleScroll {
   0%   { transform: translateX(0) }
   30%  { transform: translateX(0) }
-  70%  { transform: translateX(calc(-100% + 250px)) }
-  100% { transform: translateX(calc(-100% + 250px)) }
+  70%  { transform: translateX(calc(-100% - 0.25rem + var(--projectWidth))) }
+  100% { transform: translateX(calc(-100% - 0.25rem + var(--projectWidth))) }
 }
 
 .screenshot {
